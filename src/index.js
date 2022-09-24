@@ -1,17 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// Importamos la libreria react 
+import React from 'react'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// Importamos la libreria react-dom que nos permitira manipular el Document Object Model
+import ReactDOM from 'react-dom/client'
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Crearemos una constante que obtenga el elemento con id 'root' del archivo .html y que lo guarde como el elemento Root del proyecto.
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+// Luego, usaremos un método de React llamado .render() que 'renderiza' en la página un componente
+root.render(<h1> Hola Mundo </h1>)
+
+// Una vez guardamos el proyecto, vemos que nuestra pagina renderiza lo que hay dentro del <div id='root'></div> que es el <h1> Hola Mundo </h1>
